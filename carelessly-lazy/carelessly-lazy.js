@@ -10,10 +10,12 @@ lazyGuy.prototype.hey = function(conversation) {
     // if(new RegExp(/[a-zA-Z-,. !'?][0-9]^[?]/g).test(conversation))
     //     return anythingElse;
 
-    console.log(new RegExp(/[A-Z !%^*@#$()0-9]/g).test(conversation));
+    
     if(new RegExp(/[A-Z !%^*@#$()0-9]/g).test(conversation))
         return yell;
-    
+    if(conversation.length -1 == '?')
+        return 
+
     
 
 }
